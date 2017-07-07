@@ -1,0 +1,28 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start lab.js --name=\"lab_bulletscreen\"",
+    "restart": "pm2 restart lab_bulletscreen"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.2",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "fs-extra": "^1.0.0",
+    "gm": "^1.23.0",
+    "helmet": "^2.3.0",
+    "mongoose": "^4.6.7",
+    "multer": "^1.2.1",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "^1.5.1"
+  }
+}

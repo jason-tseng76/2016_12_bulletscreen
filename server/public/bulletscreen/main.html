@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>米蘭亂彈</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- js-cookie -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/latest/js.cookie.min.js"></script>
+
+  <!-- bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
+
+  <!-- Vue -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vuex"></script>
+
+  <!-- sweetalert2 -->
+  <link href="https://cdn.jsdelivr.net/sweetalert2/6.3.1/sweetalert2.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/sweetalert2/6.3.1/sweetalert2.min.js"></script>
+
+  <!-- custom global -->
+  <link href="/bulletscreen/css/g.css" rel="stylesheet">
+  <script type="text/javascript" src="/bulletscreen/js/g.js"></script>
+
+  <!-- bootstrap-3-typeahead-->
+  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>-->
+
+  <!-- moment.js with locale -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+
+  <!-- sortable -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.5.1/Sortable.min.js"></script>
+  <!-- clipboard -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+  <!-- jquery fullscreen -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fullscreen-plugin/1.1.4/jquery.fullscreen-min.js"></script>
+  <!-- socket.io -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+  
+
+  <!-- Google client -->
+  <meta name="google-signin-client_id" content="198094167552-efpmn3jjatrhjkcf2vo3bf13p7toq1rh.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <topmenu></topmenu>
+    <div id="main">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
+    <cover-loading></cover-loading>
+  </div>
+  <ul class="dropdown-menu context_menu">
+    <li><a href="javascript:void(0)">Dropdown</a></li>
+    <li><a href="javascript:void(0)" data-target="#contextmenu_sub1">Dropdown link2</a></li>
+    <ul class="dropdown-menu" id="contextmenu_sub1">
+      <li class="disabled"><a href="javascript:alert('11');void(0)">Dropdown link</a></li>
+    </ul>
+    <li role="separator" class="divider"></li>
+    <li><a href="javascript:void(0)" data-target="#contextmenu_sub2">Dropdown link33333</a></li>
+    <ul class="dropdown-menu" id="contextmenu_sub2">
+      <li><a href="javascript:void(0)">Dropdown link</a></li>
+      <li><a href="javascript:void(0)">Dropdown link</a></li>
+      <li><a href="javascript:void(0)">Dropdown link</a></li>
+    </ul>
+  </ul>
+  <script type="text/javascript" src="/bulletscreen/js/main.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>

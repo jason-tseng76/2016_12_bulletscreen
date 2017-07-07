@@ -1,0 +1,17 @@
+// 將您的設定放入此檔案中以覆寫預設值和使用者設定。
+{
+	//ESLint
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    // default
+    "javascript",
+    "javascriptreact",
+
+    // add these
+		{"language": "html", "autoFix": true},
+		{"language": "vue", "autoFix": true}
+  ],
+
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+}

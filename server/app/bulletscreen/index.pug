@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title 米蘭亂彈 ver 1.0
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=640, user-scalable=no")
+		meta(property="og:title" content="Interactive")
+		meta(property="description" content="米蘭亂彈 ver 1.0")
+		meta(property="keywords" content="米蘭亂彈")
+		link(rel="stylesheet" href="/bulletscreen/css/index.css")
+		script(src="/bulletscreen/js/jquery-1.12.1.min.js")
+		script(src="/bulletscreen/js/jquery.fullscreen.min.js")
+		script(src="/bulletscreen/js/socket.io.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js")
+		//Sortable
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.5.0-rc1/Sortable.min.js")
+		script(src="/bulletscreen/js/index.js")
+	body
+		.wrapper
+			.f_bg
+				img.all_bg(src="/bulletscreen/img/mbg.jpg")
+			.fs
+				.fs_container
+			.f0
+				.f0_mkv
+					img.f0_title(src="/bulletscreen/img/mtitle.png")
+					.f0_startw
+						img(src="/bulletscreen/img/m_startword.png")
+					.f0_act
+						img(src="/bulletscreen/img/minput.png")
+						input.f0_input(type="text")
+						.f0_uploadbtn
+						input#f0_ufile(type="file" name="files" multiple="multiple" style="display:none;")
+			.f1
+				.f1_title
+					img(src="/bulletscreen/img/f1_title.png")
+					.f1_slidename
+				.f1_slides
+					ul.f1_slidecontainer#sortable_slides
+				.f1_url
+					.f1_url_txt
+					.f1_url_cpbtn(data-clipboard-target=".f1_url_txt")
+				.f1_qrcode
+					.f1_grcode_mask
+			img.deco_1(src="/bulletscreen/img/deco_topright.png")
+			img.replay_btn(src="/bulletscreen/img/replay_btn.png")
+			
+

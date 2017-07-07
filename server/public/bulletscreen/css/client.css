@@ -1,0 +1,110 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft JhengHei", "微軟正黑體";
+}
+.wrapper {
+	position: relative;
+	min-width: 640px;
+	min-height: 900px;
+}
+.f_bg {
+	position: relative;
+	overflow: hidden;
+}
+.all_bg {
+	position: fixed;
+	width: 100%;
+}
+.f_title {
+	position: absolute;
+	left: 0;
+	top: 25px;
+	width: 640px;
+	height: 150px;
+	background-image: url(/bulletscreen/img/m/mtitle.png);
+}
+.f_title_w {
+	position: absolute;
+	color: white;
+	left: 284px;
+	top: 85px;
+	font-size: 30px;
+}
+.f_in_panel {
+	position: absolute;
+	width: 526px;
+	height: 287px;
+	top: 200px;
+	left: 50%;
+	margin-left: -263px;
+	background-image: url(/bulletscreen/img/m/input_panel_bg.png);
+}
+.f_input {
+	position: absolute;
+	font-size: 30px;
+	background: transparent;
+	left: 40px;
+	top: 147px;
+	width: 450px;
+	color: white;
+	border: none;
+	font-family: "Microsoft JhengHei", "微軟正黑體";
+}
+.f_in_btn {
+	position: absolute;
+	width: 193px;
+	height: 52px;
+	left: 178px;
+	top: 206px;
+	cursor: pointer;
+}
+.f_color_panel {
+	position: absolute;
+	width: 526px;
+	height: 237px;
+	top: 565px;
+	left: 50%;
+	margin-left: -263px;
+	background-image: url(/bulletscreen/img/m/color_panel_bg.png);
+}
+.f_color_bg {
+	position: absolute;
+	left: 41px;
+	top: 119px;
+	width: 437px;
+	height: 75px;
+	/*background-image: url(/bulletscreen/img/m/colors.png);
+	background-position: 0 -75px;*/
+	margin-top: -10px;
+}
+.f_color_btn {
+	position: relative;
+	float: left;
+	background-image: url(/bulletscreen/img/m/colors.png);
+	width: 109px;
+	height: 37px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.f_alert {
+	position: absolute;
+	width: 566px;
+	height: 237px;
+	background-image: url(/bulletscreen/img/m/alert.png);
+	left: 50%;
+	margin-left: -283px;
+	top: 50%;
+	margin-top: -118px;
+	display: none;
+}
+.f_player {
+	position: absolute;
+	bottom: 30px;
+}
+.f_player_bullet {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	background-image: url(/bulletscreen/img/player_bullet.png);
+}
